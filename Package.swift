@@ -5,8 +5,8 @@ import PackageDescription
 
 let package = Package(
     name: "libpng",
+    platforms: [.macCatalyst(.v14), .iOS(.v11), .macOS(.v11)],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "libpng",
             targets: ["libpng"]),
